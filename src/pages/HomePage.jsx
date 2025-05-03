@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../components/Header';
 import Marqueee from '../components/Marqueee';
+import Menu from '../components/Menu';
 
 const Home = () => {
     return (
       <div>
-        <Header></Header>
 
         <Marqueee></Marqueee>
 

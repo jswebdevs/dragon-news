@@ -5,12 +5,12 @@ import Root from "../layout/Root";
 
 //Pages 
 import ErrorPage from "../pages/ErrorPage";
-import Home from "../pages/Home";
+import Home from "../pages/HomePage";
 import SingleNewsPage from "../pages/SingleNewsPage";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
 
-
+import Register from "../components/Register";
+import Login from "../components/Login";
+import Account from "../pages/AccountPage";
 
 
 const Routes = createBrowserRouter([
@@ -40,12 +40,16 @@ const Routes = createBrowserRouter([
         element: <SingleNewsPage></SingleNewsPage>
       },
       {
-        path: "login",
-        element: <Login></Login>
+        path: "account",
+        element: <Account></Account>
       },
       {
         path: "register",
         element: <Register></Register>
+      },
+      {
+        path: "login",
+        element: <Login></Login>
       }
     ],
   },
